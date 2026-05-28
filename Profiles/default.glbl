@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'/Users/mymac/Documents/Ferdin/Codingan/Katalon/Mobile/Test-QA-Mobile-Katalon/Test-QA-Mobile-Katalon/mda-2.2.0-25.apk'</initValue>
+      <name>App</name>
+      <protected>false</protected>
+      <valueType>STRING</valueType>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
