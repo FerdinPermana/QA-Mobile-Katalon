@@ -6,7 +6,6 @@ on:
 
 jobs:
   katalon-local-test:
-    # Menggunakan Mac kamu sendiri sebagai server eksekusi
     runs-on: self-hosted
 
     steps:
@@ -14,7 +13,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Run Katalon Test on Local Mac
-      run:|
+      run: |
         /Applications/Katalon\ Studio.app/Contents/MacOS/katalon \
           -noSplash \
           -runMode=console \
