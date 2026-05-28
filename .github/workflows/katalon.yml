@@ -1,0 +1,19 @@
+name: Katalon Mobile Automation Local Mac
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  katalon-local-test:
+    # Menggunakan Mac kamu sendiri sebagai server eksekusi
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Run Katalon Test on Local Mac
+      run: |
+        # Jalankan Katalon via Command Line MacOS (pastikan Appium & Emulator sudah stand by)
+        /Applications/Katalon\ Studio.app/Contents/MacOS/katalon -noSplash -runMode=console -projectPath="${{ github.workspace }}" -retry=0 -testSuitePath="Test Suites/NamaTestSuiteKamu" -browserType="Android"
