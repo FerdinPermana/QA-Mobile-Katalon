@@ -22,3 +22,10 @@ jobs:
           -testSuitePath='Test Suites/Checkout_Cart_Shopping' \
           -browserType='Android' \
           -apiKey='${{ secrets.KATALON_API_KEY }}'
+
+    - name: Upload Test Reports to GitHub
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: katalon-mobile-reports
+        path: ${{ github.workspace }}/Reports
