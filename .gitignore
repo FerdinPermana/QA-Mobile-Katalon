@@ -26,3 +26,5 @@ output/
 Root/
 Reports/
 *.log
+actions-runner/
+*.tar.gz
