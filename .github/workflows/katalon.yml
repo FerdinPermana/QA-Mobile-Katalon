@@ -14,11 +14,11 @@ jobs:
 
     - name: Run Katalon Test on Local Mac
       run: |
-        "/Users/mymac/KRE/Katalon Studio Engine.app/Contents/MacOS/katalonc" \
+        '/Users/mymac/KRE/Katalon Studio Engine.app/Contents/MacOS/katalonc' \
           -noSplash \
           -runMode=console \
           -projectPath="${{ github.workspace }}" \
           -retry=0 \
-          -testSuitePath="Test Suites/Checkout\ Cart\ Shopping" \
-          -browserType="Android" \
-          -apiKey="${{ secrets.KATALON_API_KEY }}"
+          -testSuitePath='Test Suites/Checkout_Cart_Shopping' \
+          -browserType='Android' \
+          -apiKey='${{ secrets.KATALON_API_KEY }}'
