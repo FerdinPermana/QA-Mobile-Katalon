@@ -14,7 +14,7 @@ jobs:
 
     - name: Run Katalon Test on Local Mac
       run: |
-        /Users/mymac/KRE/Contents/MacOS/katalon \
+        "/Users/mymac/KRE/Katalon Studio Engine.app/Contents/MacOS/katalon" \
           -noSplash \
           -runMode=console \
           -projectPath="${{ github.workspace }}" \
