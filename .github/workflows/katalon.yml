@@ -19,6 +19,6 @@ jobs:
           -runMode=console \
           -projectPath="${{ github.workspace }}" \
           -retry=0 \
-          -testSuitePath="Test Suites/Checkout Cart Shopping.ts" \
+          -testSuitePath="Test Suites/Checkout\ Cart\ Shopping" \
           -browserType="Android" \
           -apiKey="${{ secrets.KATALON_API_KEY }}"
